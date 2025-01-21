@@ -1,232 +1,265 @@
 /* Geral */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f8f8f8;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f8f8f8;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Top Header */
 .top-header {
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 10px 0;
-    text-align: center;
-    transition: top 0.3s;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0;
+  text-align: center;
+  transition: top 0.3s;
 }
 .top-header.hidden {
-    top: -60px;
+  top: -60px;
 }
 
-.logotipo_top_header{
-    width: 3%;
-    margin-left: 10%;
+.logotipo_top_header {
+  width: 3%;
+  margin-left: 10%;
 }
 
-.logotipo_text{
-    font-size: medium;
-    margin-left: 1%;
-    margin-right: 10%;
-    margin-bottom: 2%;
-    color: #fff;
+.logotipo_text {
+  font-size: medium;
+  margin-left: 1%;
+  margin-right: 10%;
+  margin-bottom: 2%;
+  color: #fff;
 }
 
 .top-header .container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: flex-start;  
-    flex: 1; 
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: flex-start;
+  flex: 1;
 }
 
 .top-header button {
-    background: none;
-    border: 1px solid #dddddd00;
-    border-radius: 4px;
-    padding: 5px 10px;
-    cursor: pointer;
-    font-size: 10px;
-    transition: color 0.3s;
-    color: #fff;
+  background: none;
+  border: 1px solid #dddddd00;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 10px;
+  transition: color 0.3s;
+  color: #fff;
 }
 
 .top-header button:hover {
-    color: black;
+  color: black;
 }
 
 /* Ajuste do botão "Entrar" para afastar da borda direita */
 .top-header .login {
-    margin-left: auto; /* Empurra o botão para a direita */
-    margin-right: 30px; /* Ajuste o valor conforme necessário para afastar mais da borda direita */
+  margin-left: auto; /* Empurra o botão para a direita */
+  margin-right: 30px; /* Ajuste o valor conforme necessário para afastar mais da borda direita */
 }
 
-.login-container button{
-    color: #fff;
+.login-container button {
+  color: #fff;
 }
 
-.login-container i{
-    color: #fff;
-    font-size: 20px; /* Altere o tamanho conforme necessário */
+.login-container i {
+  color: #fff;
+  font-size: 20px; /* Altere o tamanho conforme necessário */
 }
 
 .login-container span {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Altere o valor para o espaçamento desejado */}
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Altere o valor para o espaçamento desejado */
+}
 
 /* Banner */
 .main-header {
-    position: relative;
-    height: 60vh;
-    overflow: hidden;
+  position: relative;
+  height: 60vh;
+  overflow: hidden;
 }
 .banner-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Card de Pesquisa */
 .search-card {
-    position: relative;
-    top: -50px;
-    margin: 0 auto;
-    z-index: 100;
-    width: 90%;
-    max-width: 800px;
+  position: relative;
+  top: -50px;
+  margin: 0 auto;
+  z-index: 100;
+  width: 90%;
+  max-width: 800px;
 }
 
 .search-container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .search-container input {
-    width: 100%;
-    padding: 10px 30px 10px 10px; /* Espaçamento à esquerda para a lupa */
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
+  position: relative;
+  width: 100%;
+}
+
+.search-container input {
+  width: 100%;
+  padding: 10px 30px 10px 10px; /* Espaçamento à esquerda para a lupa */
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
 .search-container i {
-    position: absolute;
-    left: 10px; /* Posiciona o ícone à esquerda */
-    top: 50%;
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    color: #888; /* Cor da lupa */
-  }
-  
+  position: absolute;
+  left: 10px; /* Posiciona o ícone à esquerda */
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza verticalmente */
+  color: #888; /* Cor da lupa */
+}
+
 .card {
-    background: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-    overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
 }
 .card-header {
-    display: flex;
-    justify-content: flex-start;
-    background-color: #f4f4f4;
-    border-bottom: 1px solid #ddd;
-    padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #f4f4f4;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
 }
 
 /* Estilo para o formulário de Pacotes */
 .search-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Espaço entre o input e o botão */
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espaço entre o input e o botão */
 }
 
 #form-pacotes .search-wrapper input {
-    width: 100%;
-    padding: 8px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 #form-pacotes .search-wrapper button {
-    background-color: #007bff;
-    color: white;
-    padding: 8px 20px;
-    border: none;
-    border-radius: 1px;
-    cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 1px;
+  cursor: pointer;
 }
 
 #form-pacotes .search-wrapper button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* Manter a estrutura flexível para os campos de pesquisa e botão */
 #form-hoteis .search-wrapper {
-    display: block; /* Formulário de Hotéis continua com a aparência padrão */
+  display: block; /* Formulário de Hotéis continua com a aparência padrão */
 }
 
 .card-header .tab {
-    background: none;
-    border: none;
-    font-size: 13px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    cursor: pointer;
-    padding: 10px 20px;
-    outline: none;
+  background: none;
+  border: none;
+  font-size: 13px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  padding: 10px 20px;
+  outline: none;
 }
 .card-header .tab.active {
-    color: black;
-    background-color: #fafafafa;
-    border-radius: 4px;
+  color: black;
+  background-color: #fafafafa;
+  border-radius: 4px;
 }
 .card-body {
-    padding: 20px;
+  padding: 20px;
 }
 
 /* Ocultar o formulário de Hotéis inicialmente */
 #form-hoteis {
-    display: none;
+  display: none;
 }
 
 /* Esconder o formulário de Pacotes quando "Hotéis" for selecionado */
 #form-pacotes {
-    display: block;
+  display: block;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .form-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
 }
 .form-group input {
-    width: 30%;
-    padding: 8px;
-    border: 2px solid #d3d3d3;
-    border-radius: 4px;
+  width: 30%;
+  padding: 8px;
+  border: 2px solid #d3d3d3;
+  border-radius: 4px;
 }
 .btn-search {
-    display: block;
-    width: 30%;
-    padding: 10px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background 0.3s;
+  display: block;
+  width: 30%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 .btn-search:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
+}
+
+/* section 2  */
+
+.text_header {
+  margin-left: 10%;
+  font-size: 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.card-body2 {
+  height: 80px;
+  background-color: #007bff;
+  opacity: 0.1;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Para garantir que a imagem preencha o espaço sem distorcer */
+}
+
+.margem {
+  padding-left: 10%; /* Adiciona espaço à esquerda */
+  padding-right: 10%; /* Adiciona espaço à direita */
+}
+
+.card-title {
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #007bff;
 }
